@@ -1,0 +1,76 @@
+\documentclass{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% language support
+\usepackage{xeCJK}
+
+% indentfirst
+%% 添加首行缩进，两个字符，用于中文文档
+%% 用于英文文档时注释以下两行
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+% math
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{mathtools}
+%% define new
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
+\newtheorem*{exercise}{Exercise}
+
+% hyperref
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	pdftitle={Systemd},
+}
+
+% acronym
+% \usepackage[acronym]{glossaries-extra}
+% \setabbreviationstyle[acronym]{long-short}
+% \makeglossaries
+%% e.g. \newacronym{bas}{BAS}{Building Automation System}
+
+% tcolorbox
+\usepackage[most]{tcolorbox}
+
+% geometry
+%% it's useful to adjust page margins and line spacing.
+% \usepackage[left=2cm, right=2cm, top=1.54cm, bottom=1cm]{geometry}
+\usepackage[margin=2.5cm]{geometry}
+
+% fancyhdr
+%% fancyhdr 需要放在 geometry 后面
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{\leftmark} % 设置右页眉为章节标题
+
+
+% setspace
+%% a simple way of changing line spacing
+%% e.g. for 1.5x line spacing
+% \usepackage[onehalfspacing]{setspace}
+%% [doublespacing] for 2x line spacing
+
+% siunitx
+% \usepackage{siunitx}
+
+% graphicx
+%% include the graphics
+%% e.g. scale the image to 80% of the text width
+% \includegraphics[width=0.8\textwidth]{figure.eps}
+%% e.g. fix the hight and width of a figure
+%% [width=2cm, height=5cm]
+%% e.g. rotate 90 degrees
+%% [angle=90]
+%% set the default path
+% \graphicspath{{./figures}{./additionalFigures}}
+
+% biblatex
+% \usepackage{biblatex}

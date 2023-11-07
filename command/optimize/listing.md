@@ -1,0 +1,17 @@
+# commands
+- lsof
+- iostat
+- vmstat
+- ifstat
+- mpstat
+- netstat
+- uptime
+- top
+- iotop
+- ltrace
+- strace
+- fuser
+- free
+- df
+- pstree
+- pstack    (print a stack trace of a process)

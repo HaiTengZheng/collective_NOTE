@@ -1,0 +1,50 @@
+\documentclass{article}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% language support
+\usepackage{xeCJK}
+
+% math
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{mathtools}
+%% define new
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
+\newtheorem*{exercise}{Exercise}
+
+% hyperref
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,
+	urlcolor=cyan,
+	pdftitle={Linux Networking},
+}
+
+% acronym
+% \usepackage[acronym]{glossaries-extra}
+% \setabbreviationstyle[acronym]{long-short}
+% \makeglossaries
+% e.g. \newacronym{bas}{BAS}{Building Automation System}
+
+% tcolorbox
+\usepackage[most]{tcolorbox}
+
+% fancyhdr
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{\leftmark} % 设置右页眉为章节标题
+
+% graphicx
+\usepackage{graphicx}
+
+% siunitx
+\usepackage{siunitx}
