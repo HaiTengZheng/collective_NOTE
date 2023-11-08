@@ -87,5 +87,7 @@ set -g mouse off
 set -g default-terminal "screen-256color"
 # set color for the active window
 setw -g window-status-current-style bg=red
+# set escape time zero
+set -s escape-time 0
 ```
 
