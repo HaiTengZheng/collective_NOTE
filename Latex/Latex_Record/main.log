@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.7)  7 NOV 2023 20:33
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.8)  12 NOV 2023 00:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -128,7 +128,26 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
 )) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 227.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks16
 \symAMSa=\mathgroup4
@@ -370,7 +389,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip68
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 33.
+Package hyperref Info: Option `colorlinks' set `true' on input line 38.
  (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2023/03/17 version 6.0.3 text color boxes
  (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
@@ -393,9 +412,7 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
-))
+)
 \Gin@req@height=\dimen197
 \Gin@req@width=\dimen198
 ) (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
@@ -434,33 +451,18 @@ Driver file for pgf: pgfsys-xetex.def
 File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
 File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )
 \pgfsys@objnum=\count321
-))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@smallbuffer@items=\count322
 \pgfsyssoftpath@bigbuffer@items=\count323
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: xetex.def on input line 227.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1369.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen265
@@ -495,8 +497,7 @@ File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@shorten@end@additional=\dimen282
 \pgf@shorten@start@additional=\dimen283
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box60
 \pgf@hbox=\box61
@@ -510,7 +511,8 @@ File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@pt@x=\dimen285
 \pgf@pt@y=\dimen286
 \pgf@pt@temp=\dimen287
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -700,24 +702,7 @@ File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '6.0.3'
-)) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-)
-\Gm@cnth=\count358
-\Gm@cntv=\count359
-\c@Gm@tempcnt=\count360
-\Gm@bindingoffset=\dimen310
-\Gm@wd@mp=\dimen311
-\Gm@odd@mp=\dimen312
-\Gm@even@mp=\dimen313
-\Gm@layoutwidth=\dimen314
-\Gm@layoutheight=\dimen315
-\Gm@layouthoffset=\dimen316
-\Gm@layoutvoffset=\dimen317
-\Gm@dimlist=\toks44
-) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip69
 \f@nch@O@elh=\skip70
@@ -730,41 +715,41 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@orf=\skip77
 ) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2023-03-14 v3.2.3 A comprehensive (SI) units package
-\l__siunitx_angle_tmp_dim=\dimen318
+\l__siunitx_angle_tmp_dim=\dimen310
 \l__siunitx_angle_marker_box=\box83
 \l__siunitx_angle_unit_box=\box84
-\l__siunitx_compound_count_int=\count361
+\l__siunitx_compound_count_int=\count358
  (/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
 )
-\l__siunitx_number_exponent_fixed_int=\count362
-\l__siunitx_number_min_decimal_int=\count363
-\l__siunitx_number_min_integer_int=\count364
-\l__siunitx_number_round_precision_int=\count365
-\l__siunitx_number_lower_threshold_int=\count366
-\l__siunitx_number_upper_threshold_int=\count367
-\l__siunitx_number_group_first_int=\count368
-\l__siunitx_number_group_size_int=\count369
-\l__siunitx_number_group_minimum_int=\count370
+\l__siunitx_number_exponent_fixed_int=\count359
+\l__siunitx_number_min_decimal_int=\count360
+\l__siunitx_number_min_integer_int=\count361
+\l__siunitx_number_round_precision_int=\count362
+\l__siunitx_number_lower_threshold_int=\count363
+\l__siunitx_number_upper_threshold_int=\count364
+\l__siunitx_number_group_first_int=\count365
+\l__siunitx_number_group_size_int=\count366
+\l__siunitx_number_group_minimum_int=\count367
 \l__siunitx_table_tmp_box=\box85
-\l__siunitx_table_tmp_dim=\dimen319
-\l__siunitx_table_column_width_dim=\dimen320
+\l__siunitx_table_tmp_dim=\dimen311
+\l__siunitx_table_column_width_dim=\dimen312
 \l__siunitx_table_integer_box=\box86
 \l__siunitx_table_decimal_box=\box87
 \l__siunitx_table_uncert_box=\box88
 \l__siunitx_table_before_box=\box89
 \l__siunitx_table_after_box=\box90
-\l__siunitx_table_before_dim=\dimen321
-\l__siunitx_table_carry_dim=\dimen322
-\l__siunitx_unit_tmp_int=\count371
-\l__siunitx_unit_position_int=\count372
-\l__siunitx_unit_total_int=\count373
+\l__siunitx_table_before_dim=\dimen313
+\l__siunitx_table_carry_dim=\dimen314
+\l__siunitx_unit_tmp_int=\count368
+\l__siunitx_unit_position_int=\count369
+\l__siunitx_unit_total_int=\count370
  (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen323
+\col@sep=\dimen315
 \ar@mcellbox=\box91
-\extrarowheight=\dimen324
-\NC@list=\toks45
+\extrarowheight=\dimen316
+\NC@list=\toks44
 \extratabsurround=\skip78
 \backup@length=\skip79
 \ar@cellbox=\box92
@@ -796,7 +781,7 @@ Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 7.
-(./main.aux (./section/install.aux))
+(./main.aux (./section/text.aux) (./section/math.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -884,43 +869,8 @@ Package hyperref Info: Link coloring ON on input line 7.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-\c@lstlisting=\count374
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: xetex
-*geometry* verbose mode - [ preamble ] result:
-* driver: xetex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=472.03123pt
-* \textheight=652.70622pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-38.1381pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-(/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+\c@lstlisting=\count371
+ (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 7.
@@ -938,38 +888,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 ]
-\openout2 = `section/install.aux'.
+\openout2 = `section/text.aux'.
 
- (./section/install.tex
+ (./section/text.tex) [2
 
-Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
-(fontspec)                Script "CJK".
+]
+\openout2 = `section/math.aux'.
 
-
-Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
-(fontspec)             'FandolFang-Regular' with options
-(fontspec)             [Script={CJK},Extension={.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[FandolFang-Regular.otf]/OT:language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
-) [2
-
-] (./main.aux (./section/install.aux))
+ (./section/math.tex) (./main.aux (./section/text.aux) (./section/math.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FBEEF213B13E7F1B3402619CB778D48D;102.
+(rerunfilecheck)             Checksum: 1CAE2128E9971C1F7763FE60D15B4269;63.
  ) 
 Here is how much of TeX's memory you used:
- 35566 strings out of 476696
- 815129 string characters out of 5806955
+ 35104 strings out of 476696
+ 806632 string characters out of 5806955
  1850018 words of memory out of 6000000
- 55255 multiletter control sequences out of 15000+600000
- 525251 words of font info for 101 fonts, out of 8000000 for 9000
+ 54810 multiletter control sequences out of 15000+600000
+ 520731 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,11n,107p,443b,788s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,11n,107p,443b,790s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (2 pages, 17516 bytes).
+Output written on main.xdv (2 pages, 15408 bytes).

@@ -73,6 +73,9 @@
 - texdoc
 - texlive-scheme-full
 - numactl
+- redhat-lsb
+- info
+- lyx
 
 # group install
 > sudo dnf group install --with-optional
