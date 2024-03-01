@@ -1,0 +1,55 @@
+\documentclass[a4paper]{book}
+\setlength\parindent{0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% language support
+\usepackage{xeCJK}
+
+%xcolor
+\usepackage[dvipsnames]{xcolor}
+
+% math
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{mathtools}
+
+%% define new
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
+\newtheorem*{exercise}{Exercise}
+
+% hyperref
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	pdftitle={Rust},
+}
+
+% acronym
+\usepackage[nomain, acronym, automake]{glossaries-extra}
+\setabbreviationstyle[acronym]{long-short}
+\makeglossaries
+\newacronym{rall}{RALL}{Resource Acquisition Is Initialization}
+\newacronym{dsl}{DSL}{Domain-Specific language}
+\newacronym{ast}{AST}{Abstract Syntax Tree}
+
+% tcolorbox
+\usepackage[most]{tcolorbox}
+
+% geometry
+\usepackage[margin=2.5cm]{geometry}
+
+% fancyhdr
+%% fancyhdr 需要放在 geometry 后面
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{\leftmark} % 设置右页眉为章节标题
+
+\usepackage{listings, listings-rust}
+
+% redefine `\emph{}` command
+\DeclareTextFontCommand{\emph}{\bfseries\em}

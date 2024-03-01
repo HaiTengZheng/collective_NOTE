@@ -5,3 +5,6 @@ print real and effective user and group IDs
 
 # ps
 ## ps -eZ
+
+# list information of a directory
+> ls -dZ dir_1

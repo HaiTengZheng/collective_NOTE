@@ -2,8 +2,8 @@
 ## poweroff shortcut
 > Ctrl-Alt-Delete
 
-On Linux systems that do not use systemd, it is contolled by the 
-    `/etc/iniitab' (no longer use in other system)
+On Linux systems that do not use systemd, it is contolled by the `/etc/iniitab' 
+(no longer use in other system)
 
 ## configure `Ctrl-Alt-Delete` in the Linux Console
 > man 7 systemd.special
@@ -28,7 +28,7 @@ link to /lib/systemd/system/reboot.target
 -------------------------------------------------------------------------------
 # commands
 In Linux distributions with systemd, the classic old commands are not installed
-    on the system. Intead, their names are symlinked to the systemctl command.
+on the system. Intead, their names are symlinked to the systemctl command.
 
 e.g. use stat command found that
 > stat /sbin/shutdown

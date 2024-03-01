@@ -1,0 +1,22 @@
+\section{Enum}
+In Rust, \emph{enumeration} is simply called \emph{enum}. A enum can contain
+data and varying types. Rust enum is \emph{type-safe}.
+\begin{lstlisting}[language=rust, style=boxed]
+enum Ex_Enum {
+	ex_NoType,
+	ex_Struct_1		{ x: u8, y: u8},
+	ex_Struct_2		Point,
+	ex_String		(String),
+	ex_Tuple_1		(u8, u8, u8),
+	ex_Tuple_2		((u8, u8, u8)),
+	// Remember: When passing a tuple as a function argument, you'll need
+	// extra parentheses: fn function((t, u, p, l, e))
+}
+
+struct Point {
+	x: u8,
+	y: u8,
+};
+
+let ex = Ex_Enum::ex_NoType;
+\end{lstlisting}

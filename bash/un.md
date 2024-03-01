@@ -17,3 +17,21 @@ e.g.
 - set           (输出所有的变量)
 - env           (只显示全局变量)
 - declare       (输出所有的变量, 函数, 整数和已经导出的变量)
+
+# gzip
+files compressed by gzip can be directly concatenated into larger gzipped files
+> cat file1.gz file2.gz file3.gz > combined.gz
+
+# reomve an alias
+> unalias {alias_name}
+
+#  
+```bash
+cd "$(dirname "$(readlink -f "$0")")"
+# readlink -f "$0" determines the path to the current script ($0)
+```
+
+# hexdump
+> od -cH
+or use `xxd`
+> printf "content" | xxd

@@ -1,0 +1,48 @@
+\input{preamble}
+
+\title{Rust Programming}
+\author{haiteng.zheng}
+\date{\today}
+%
+\begin{document}
+% Cover page
+\thispagestyle{empty}	% Remove the page numbering
+\begin{center}
+	{\Huge\bf Rust Programming Note}\\[5mm]
+	{\Large\bf Keep recording \dots }
+\end{center}
+\cleardoublepage
+
+% Preface
+\frontmatter	% First part of the book: title, preface, contents, etc... with
+				% page in Roman numerals and no numbering to the \chapter{} command
+\chapter*{Preface}
+\cleardoublepage
+
+% Contents
+\tableofcontents
+\cleardoublepage
+
+%\listoftables
+%\cleardoublepage
+
+%\listoffigures
+%\cleardoublepage
+
+% Starting chapters
+\mainmatter		% Second part of the book
+%\pagenumbering{arabic}		% Re-start the page numbering with Arabic-style numerals
+\include{chapter/asynchronous/asynchronous}
+
+ 
+%\backmatter		% Last part of the book: bibiography, index, etc... without chapter numbering
+\appendix
+\chapter{Recommendation}
+
+%\bibliographystyle{plain}
+%\bibliography{mybib}
+%\printindex
+
+\newpage
+\printglossaries
+\end{document}

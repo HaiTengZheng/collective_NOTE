@@ -1,4 +1,5 @@
 # ifconfig  (命令已过时)
+> sudo apt install net-tools
 ifconfig 在配置网卡信息时必须以 root 用户的身份来执行
 > ifconfig <interface> <option>
 ## 查看网卡

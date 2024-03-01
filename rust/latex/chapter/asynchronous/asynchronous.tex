@@ -1,0 +1,91 @@
+\chapter{Asynchronous Programming}
+
+\section{Fundamental Concepts}
+\begin{definition}[Asynchronous Programming]
+	A concurrent programming model. 
+\end{definition}
+
+\emph{Async} improve the system performance by nont blcoking the threads.
+
+\begin{tcolorbox}
+	\begin{quotation}
+		It lets you run a large number of concurrent tasks on a small number of OS threads, 
+		while preserving much of the look and feel of ordinary synchronous programming, 
+		through the \emph{async/await} syntax.
+	\end{quotation}
+\end{tcolorbox}
+\begin{tcolorbox}
+	\begin{quotation}
+		相比与传统的同步编程，异步编程可以更好地处理 IO 密集型任务和并发请求，提
+		高系统的吞吐量核性能。
+	\end{quotation}
+\end{tcolorbox}
+
+\section{Other Concurrency Models}
+\begin{itemize}
+	\item OS threads
+	\item Event-driven programming
+	\item Coroutines
+	\item The actor model
+\end{itemize}
+
+\section{Future}
+\emph{Future} is an asynchronous computation that will be completed in the future. 
+\begin{lstlisting}[language=rust, style=boxed]
+pub trait Future {
+	type Output;
+
+	// Require method
+	fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output>;
+}
+
+pub enum Poll<T> {
+    Ready(T),
+    Pending,
+}
+\end{lstlisting}
+
+Async in Rust uses a \emph{poll-based approach} in which an asynchronous task will
+have three phases.
+\begin{enumerate}
+	\item \emph{The poll phase:}
+		  We often refer to the part of the runtime that polls a future as an \emph{executor}.
+	\item \emph{The wait phase:}
+		  An event source, most often referred to as a \emph{reactor}.
+	\item \emph{The wake phase:}
+		  The event happens, and the future is woken up.
+\end{enumerate}
+
+\subsection{Leaf futures}
+\begin{definition}[Leaf futures]
+	Runtime create it, which represent a resource such as a socket.
+\end{definition}
+
+\subsection{Non-Leaf futures}
+\begin{definition}[Non-Leaf futures]
+	The kind of futures we as users of runtime write ourselves using the \emph{async}
+	keyword to create a task that can be run on the executor.
+\end{definition}
+
+\subsection{A mental model of an async runtime}
+Rust doesn't come with a runtime for handling concurrency.
+\begin{itemize}
+	\item  \emph{Reactor} (responsible for notifyling about I/O events)
+	\item  \emph{Executor} (scheduler)
+	\item  \emph{Future} (a task that cans stop and resume at specific points)
+\end{itemize}
+
+\section{Resource Collection}
+\begin{itemize}
+	\item \href{https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html}
+			   {Asynchronous Programming in Rust}
+	\item \href{https://course.rs/advance/async/intro.html}
+			   {Rust Course}
+	\item \href{https://github.com/smallnest/concurrency-programming-via-rust}
+			   {concurrency-programming-via-rust}
+	\item \href{https://github.com/PacktPublishing/Asynchronous-Programming-in-Rust}
+			   {Asynchronous Programming in Rust (By Carl Fredrik Samson)} 
+	\item \href{https://github.com/PacktPublishing/Hands-On-Concurrency-with-Rust}
+			   {Hands-On-Concurrency-with-Rust}
+\end{itemize}
+

@@ -26,6 +26,8 @@ pattern scanning and processing language
 
 # NR
 记录数量
+## 打印文本第一行
+> awk 'NR==1 {print}' filename
 
 # BEGIN 模块
 在开始处理输入文件中的文本之前执行初始化代码
@@ -34,3 +36,9 @@ pattern scanning and processing language
 # END 模块
  在处理了输入文件中的所有行之后执行
 - 通常用于执行最终计算或打印摘要
+
+# shell 中的变量赋值时不加任何引号
+awk 单引号显示变量本身，双引号显示变量的值，不加引号
+输出空值
+- 习惯：先用 echo 输出变量人后管道传递给 awk
+> echo "VAR" | awk '{print $0}'

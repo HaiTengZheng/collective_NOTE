@@ -1,4 +1,5 @@
 # ip
+> sudo apt install iproute2
 > ip <option> <object> <command>
 - support command completion
 e.g.

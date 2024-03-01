@@ -76,6 +76,10 @@
 - redhat-lsb
 - info
 - lyx
+- net-snmp
+- net-snmp-utils
+- NetworkManager-tui
+- kubernetes-kubeadm
 
 # group install
 > sudo dnf group install --with-optional
@@ -112,6 +116,8 @@ e.g. (remap Caps Lock with dconf)
 # pip install
 - jupyterlab-vim 
 - pynvim
+- line_profilter
+- memory_profiler
 ## config pip
 > touch .config/pip/pip.conf
 ```

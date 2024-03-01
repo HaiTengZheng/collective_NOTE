@@ -1,11 +1,28 @@
-# config file (privority decrement)
+# config file (priority decrement)
 1. ANSIBLE_CONFIG
 2. ./ansible.cfg
 3. ~/.ansible.cfg
-4. /etc/ansible/ansible.cfg
+4. /etc/ansible/ansible.cfg     (default file, no effective settings)
+
+# important
+- for ansible security, a configuration file is never loaded from a
+  world-writable directory.
+
 
 # inventory
+files or directories that exist on the sanem system that runs `ansible` and
+`ansible-playbook`
 > /etc/ansible/hosts
+- the location of the inventory can be defined at runtime with the 
+  `--inventory-file (-i)` argument or by defining the path in an Ansible 
+  `config` file
+- can be static or dynamic, or even a combination of both, and Ansible is not
+  limited to a single inventory
+## static inventories
+- a static inventory will consist of a single file in `ini` format, other 
+  formats like `YAML` are supported
+
+
 
 # library
 > /usr/share/ansible
@@ -34,3 +51,4 @@ default:
 # log_path
 默认不记录日志
 > log_path = /var/log/ansible.log
+

@@ -55,15 +55,15 @@ enter command mode
 get a list of all predefined keybindings and associated commmands these trigger
 
 # .tmux.conf
-```
-# Setting the prefix from C-b to C-a
-set -g prefix C-a
+```bash
+# Setting the prefix from C-b to C-q
+set -g prefix C-q
 # free the original C-b key
 unbind C-b
 # reload the configuration file
 bind r source ~/.tmux.conf \; display "Reloaded!"
-# ensure that we can send Ctrl-A to other apps
-bind C-a send-prefix
+# ensure that we can send Ctrl-Q to other apps
+bind C-q send-prefix
 # splitting panes with | and -
 bind | split-window -h
 bind - split-window -v
@@ -82,12 +82,18 @@ bind -r K resize-pane -U 5
 bind -r L resize-pane -R 5
 # mouse
 # set -g mouse on
-set -g mouse off
+set -g mouse on
 # set the default terminal mode to 256color mode
 set -g default-terminal "screen-256color"
 # set color for the active window
 setw -g window-status-current-style bg=red
 # set escape time zero
 set -s escape-time 0
+
+# scroll screen
+setw -g mode-keys vi
+# Ctrl-q, [
+# up: Ctrl-u
+# down: Ctrl-d
 ```
 

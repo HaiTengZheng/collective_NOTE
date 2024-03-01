@@ -1,0 +1,45 @@
+\section{Graph}
+\subsection{Definition}
+\begin{definition}[graph]
+	A graph G = (V, E) consists of a set of vertices, V, and a set of edges, E.
+\end{definition}
+
+Each edge is a pare $(v, w)$, where $(v, w) \in V$. Edge are somtimes referred
+to as \emph{arcs}. 
+
+\begin{definition}[directed]
+	Pair is ordered.
+\end{definition}
+
+Directed graphs are somtimes referred to as \emph{digraphs}.
+
+Vertex $w$ is adjacent to $v$ if and only if $(v, w) \in E$.
+
+In an undirected graph with edge $(v, w)$, and hence $(w, v)$, $w$ is adjacent
+to $v$ and $v$ is adjacent to $w$.
+
+Somtimes an edge has a third component, known as either a \emph{weight} and 
+a \emph{cost}.
+
+\begin{definition}[path]
+	A path in a graph is a sequence of vertices $w_1, w_2, w_3, \dots , w_N$
+	such that $(w_i, w_{i+1}) \in E$ for $i \leq i < N$.
+\end{definition}
+
+A \emph{length} of such a path is the number of edges on the path, which is 
+equal to $N - 1$. We allow a path from a vertex to itself; if this path contains
+no edges, then the path length is 0. The $(v, v)$ is somtimes referred to as a
+\emph{loop}.
+
+\begin{definition}[simple path]
+	A simple path is a path such that all vertices are distinct, exepect that 
+	the first and last could be the same.
+\end{definition}
+
+\begin{definition}[cycle]
+	A cycle in a directed graph is a path of length at least 1 such that 
+	$w_1 = w_N$.
+\end{definition}
+
+A directed graph is \emph{acyclic} if it has no cycles. A directed acyclic
+graph is somtimes referred to by its abbreviation, \emph{DAG}.

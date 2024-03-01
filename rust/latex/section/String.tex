@@ -1,0 +1,20 @@
+\section{String}
+\begin{definition}[str]
+	The \emph{string slices}, the only one string type in the core language.
+	\emph{\&str} is the borrowed form.
+\end{definition}
+
+String slices are references to some UTF-8 encoded string data stored elsewhere.
+
+\begin{lstlisting}[language=rust, style=boxed]
+	let String1 = String::from("Hello");
+	let String2 = String::from(" World");
+	let String_add = String1 + &String2;
+
+	let str1 = "hello";
+	let str2 = " world";
+	let String_add = s1.to_string() + s2;
+
+	let str3 = "hello";
+	let String_add = str3.to_string() + &" world";
+\end{lstlisting}

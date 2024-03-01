@@ -1,4 +1,8 @@
 # REST
+- GET
+- UPDATE
+- CREATE
+- DELETE
 > representational state transfer
 visualize web services as a network of resources, each having its own state
 - not a formal standard but an architectural style

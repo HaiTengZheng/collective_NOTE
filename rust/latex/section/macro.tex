@@ -1,0 +1,70 @@
+\section{Macro}
+Rust macros don't capture variables from their environment.
+
+Rule of thumb: macros can be used in situations where functions fail to provide
+the desired solution, where you have code that is quite repetitive, or in cases
+where you need to inspect the structure of your types and generate code at
+compiler time.
+
+Rust do their magic of code generation before the program compiles to a binary
+object file. They take input, known as \emph{token trees}, and are expanded at
+the end of the second pass of parsing during \gls{ast} construction.
+
+Rust macros are parsed at the end of the second phrase of the \gls{ast} 
+construction, which is a phase where name resolution happens.
+
+\subsection{Types of macros}
+\paragraph{Declarative macros}
+The simplest form, created using \verb"macro_rules!".
+\begin{lstlisting}[language=rust, style=boxed]
+use std::io;
+macro_rules! scanline {
+	($x:expr) => ({
+		io.stdin().read_line(&mut $x).unwrap();
+	});
+	() => ({
+		let mut s = String::new();
+		io.stdin().read_line(&mut s).unwrap();
+		s
+	});
+}
+/* `scanline` is the macro name */
+\end{lstlisting}
+
+Every matching rule consists of these parts.
+\begin{itemize}
+	\item The \emph{pattern matcher}, that is, the \verb!($x:expr)!
+		  part. 
+	\item A \verb!=>!.
+	\item The \emph{code generation block}, which can be delimited
+		  either with \verb!()!, \verb!{}!, or even \verb![]!.
+\end{itemize}
+
+A matching rule has to end with a semicolon when there is more than one rule to
+match. \verb!$x! is a token tree, \verb!expr! is token tree type which means
+that this macro can only accept things that are expressions.
+
+The token tree types list below:
+\begin{itemize}
+	\item \verb!block!
+	\item \verb!expr!
+	\item \verb!ident!
+	\item \verb!item!
+	\item \verb!meta!
+	\item \verb!pat!
+	\item \verb!path!
+	\item \verb!stmt!
+	\item \verb!tt!
+	\item \verb!ty!
+	\item \verb!vis!
+	\item \verb!lifetime!
+	\item \verb!literal!
+\end{itemize}
+
+\paragraph{Procedural macros}
+Advanced form, have complete control over the manipulation and generation of 
+code. These macros don't come with any \gls{dsl} support and are procedural in 
+the sense that you have to write how you want the code to be generated or
+transformed for a given token tree input.
+
+
