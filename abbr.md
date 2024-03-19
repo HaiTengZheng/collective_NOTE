@@ -1,1 +1,0 @@
-- commercial off-the-shelf (COTS)

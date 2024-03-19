@@ -1,0 +1,72 @@
+\documentclass{ctexart}
+% \documentclass{amsart}
+ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% language support
+\usepackage{xeCJK}
+
+% indentfirst
+%% 添加首行缩进，两个字符，用于中文文档
+%% 用于英文文档时注释以下两行
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+%xcolor
+\usepackage[dvipsnames]{xcolor}
+
+% math
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{mathtools}
+%% define new
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
+\newtheorem*{exercise}{Exercise}
+
+% hyperref
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	pdftitle={article},
+}
+
+% acronym
+% \usepackage[acronym]{glossaries-extra}
+% \setabbreviationstyle[acronym]{long-short}
+% \makeglossaries
+%% e.g. \newacronym{bas}{BAS}{Building Automation System}
+
+% tcolorbox
+\usepackage[most]{tcolorbox}
+
+% geometry
+%% it's useful to adjust page margins and line spacing.
+% \usepackage[left=2cm, right=2cm, top=1.54cm, bottom=1cm]{geometry}
+% \usepackage[margin=2.5cm]{geometry}
+
+% fancyhdr
+%% fancyhdr 需要放在 geometry 后面
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{}
+\fancyhead[C]{宁波工程学院毕业设计(论文)---文献综述}
+\fancyhead[R]{}
+\fancyfoot[L]{}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{}
+
+
+
+% siunitx
+\usepackage{siunitx}
+
+\usepackage[backend=biber,style=gb7714-2015]{biblatex}
+\addbibresource{ref.bib}
+\ctexset{section/format = \Large\bfseries}

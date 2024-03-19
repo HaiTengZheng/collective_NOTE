@@ -1,0 +1,17 @@
+\chapter{Rust Toolchain}
+\section{Inner Development Loop}
+\subsection{Fast Linking}
+\begin{definition}[linking]
+	Assembling the actual library given the outputs of the earlier compilation 
+	stages.
+\end{definition}
+
+A faster alternative: \emph{lld} (a linker developed by the LLVM project).
+
+\begin{lstlisting}[language=toml]
+# on linux
+[target.x86_64-unknown-linux-gnu]
+rustflags = ["-C", "linker=clang", "-C", "link-arg"=-fuse-ld=lld"]
+\end{lstlisting}
+
+\subsection{cargo-watch}

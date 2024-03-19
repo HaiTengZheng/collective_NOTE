@@ -4,13 +4,15 @@
 3. ~/.ansible.cfg
 4. /etc/ansible/ansible.cfg     (default file, no effective settings)
 
+comment with the # or the ; symbol
+
 # important
 - for ansible security, a configuration file is never loaded from a
   world-writable directory.
 
 
 # inventory
-files or directories that exist on the sanem system that runs `ansible` and
+files or directories that exist on the same system that runs `ansible` and
 `ansible-playbook`
 > /etc/ansible/hosts
 - the location of the inventory can be defined at runtime with the 
@@ -21,8 +23,6 @@ files or directories that exist on the sanem system that runs `ansible` and
 ## static inventories
 - a static inventory will consist of a single file in `ini` format, other 
   formats like `YAML` are supported
-
-
 
 # library
 > /usr/share/ansible

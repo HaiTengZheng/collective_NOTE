@@ -15,9 +15,26 @@ for elm in &arr {
     println!("{}", elm);
 }
 ```
+- .iter()       For an iterator of references
+- .iter_mut()   For an iterator of mutable references
+- .into_iter()  For an iterator of values (not references)
+
+A `for` loop is an iterator of values,
+`for item in iterator` = `for item in iterator.into_iter()`
+
+# .map()
+let you do something to every item
+
+# .for_each()
+the method lets you do something with every item without creating a new iterator
+- `.iter_mut` plus `.for_each` is basically a `for` loop
+
+# .next()
+return a `Option`
 
 ## Iterator trait
 > std::iter::Iterator
+
 ```rust
 pub trait Iterator {
     type Item;
@@ -44,6 +61,7 @@ let x = &[1, 2, 4];
 unsafe {
     assert_eq!(x.get_unchecked(1), &2);
 }
+
 ```
 - skip()
 - take()

@@ -1,4 +1,5 @@
 # HashMap<K, V>
+> https://rustwiki.org/zh-CN/std/collections/hash_map/struct.HashMap.html
 存储了 K 类型到 V 类型值之间的映射关系
 - 将数据存储在堆上
 

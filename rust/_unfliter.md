@@ -41,3 +41,6 @@ UTF-8  作为底层编码，每个字符占 4 个字节。
 // interface in `no_std` requires nightly
 ```
 
+
+# the nonfunctional style (called imperative style)
+imperative means give order or instructions
