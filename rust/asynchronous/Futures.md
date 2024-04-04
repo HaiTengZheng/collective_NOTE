@@ -1,13 +1,15 @@
 # future
-A future is a representation of some operation that will be completed in the 
-future
+A `Future` is a representation of some operation that will be completed in the 
+future. 
+A `Future` is an asynchronous computation can produce a value (the value can 
+be empty, `()`)
 
 # Async in Rust uses a poll-based approach
 three phases
 1. the poll phase
 - often refer to the part of the runtime that polls a future as an `executor`
 2. the wait phase
-- an event source, most often refferred to as a reactor
+- an event source, most often referred to as a `reactor`
 3. the wake phase
 
 # leaf futures

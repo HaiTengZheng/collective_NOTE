@@ -1,8 +1,8 @@
 # meta programming
 
 # macro
-- declarative(recursive) macros    (default)
-- procedural macros     (require a flag to enable)
+- declarative(recursive) macros     (default)
+- procedural macros                 (require a flag to enable)
   需要将 Cargo.toml 文件中的属性设置为 proc-macro = true 来生成独立的软件包
 
 Macros execute at compile time.

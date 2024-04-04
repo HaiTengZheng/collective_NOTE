@@ -1,6 +1,6 @@
 # macro keywords
 ## block
-> block: a sequence of statements
+> block: a sequence of statements (a block expression inside {})
 - { silly; things }
 It matches any sequence of statements, delimited by braces.
 
@@ -12,14 +12,14 @@ It matches any sequence of statements, delimited by braces.
 It does not match statements like `let x = 1`, since it's not a single expression
 
 ## ident
-> ident: an identifier
+> ident: an identifier (such as a variable name)
 - x
 - long_Identifer
 Unicode strings that are not keywords (such as if or let)
 As a exception, the underscore character `_` is not an identifier in Rust.
 
 ## item
-> item: an item
+> item: an item (a struct, module, etc.)
 Top>level definitions are called items.
 These include functions, use declarations, type definitins, and so on
 - use std::io;
@@ -27,7 +27,7 @@ These include functions, use declarations, type definitins, and so on
 - const X: usize = 8;
 
 ## meta
-> meta: a meta item
+> meta: a meta item (the information that goes inside attributes)
 The parameters inside attributes are called meta items, which are captured by
 `meta`.
 - #![foo]

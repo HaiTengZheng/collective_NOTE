@@ -9,7 +9,7 @@ e.g. CONFIG_SMP     多对称处理器的配置选项
 module 意味着以模块 (一种可以动态安装的独立代码段) 的形式生效
 ## 配置工具
 - make config       字符界面
-- make menuconfig   基于 ncurse 库编制的图形界面
+- make menuconfig   基于 ncurse 库编制的图形界面 (recommend)
 - make gconfig      基于 gtk+ 的图形工具
 ## 默认编译
 基于默认的配置为你的体系结构创建一个配置
