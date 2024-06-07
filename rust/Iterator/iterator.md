@@ -1,7 +1,8 @@
-# iterator
+# Iterator
 lazy
 ```rust
-// >> std::iter::Iterator   trait
+// Trait: std::iter::Iterator
+// Iterator trait source code locate in /library/core/src/iter/*.*
 let v = vec![1, 2];
 let v_iter = v.iter();
 assert_eq!(v.next(), Some(&1));

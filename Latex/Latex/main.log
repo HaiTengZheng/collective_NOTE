@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.18)  9 DEC 2023 17:30
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.3.12)  13 APR 2024 00:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -323,12 +323,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 13874 strings out of 476696
- 302169 string characters out of 5806954
- 1849018 words of memory out of 6000000
- 33919 multiletter control sequences out of 15000+600000
+ 13847 strings out of 476696
+ 301509 string characters out of 5806955
+ 1850018 words of memory out of 6000000
+ 33892 multiletter control sequences out of 15000+600000
  515087 words of font info for 49 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,6n,104p,443b,648s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,6n,104p,443b,485s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (1 page, 13056 bytes).
+Output written on main.xdv (1 page, 14176 bytes).

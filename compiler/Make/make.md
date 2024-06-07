@@ -1,7 +1,7 @@
 # Make
 - structured top-down
 - bottom-up execute
-- support whildcards which identical to the Bourne shell's
+- support wildcards which identical to the Bourne shell's
 -------------------------------------------------------------------------------
 # default rule
 ```Makefile
@@ -12,11 +12,14 @@ target_1 target_2: prereq_1 prereq_2
 ```
 - one or more targets appear to the left of the colon
 - zero or more prerequisites can appear to the right of the colon
-- each commands must begin with a `tab` character, this (obscure) syntax
-    tells make that the characters that follow the tab are to be passed to a
-    `subshell` for execution
+- each command must begin with a `tab` character, this (obscure) syntax
+  tells make that the characters that follow the tab are to be passed to a
+  `subshell` for execution
 - long lines can be continued using the standard Unix escape character 
-    backslash `\`, (commands, prerequisites is the same)
+  backslash `\`, (commands, prerequisites is the same)
+
+## --just-print (-n)
+用来要求 make 显示它将为特定工作目标执行的命令
 
 # target
 > the file or thing that must be made
@@ -26,14 +29,22 @@ target_1 target_2: prereq_1 prereq_2
     includes a special target `.PHONY` to tell make that a target is not a
     real file
 e.g. target is not a real 
-```
+```make
 .PHONY: target
+# .PHONY 用来告诉 make，该工作目标不是一个真正的文件
 target:
     command
 ```
 - 将假想工作目标内置在 makefile 里的 shell 脚本使用
+```make
+.PHONY: df
+df:
+    df -k . | awk 'NR == 2 {printf("%d available\n", $$4}'
+```
 - 假想工作目标总是尚未更新, 所以它们总是被执行, 并且总是会使得它们的 targets 被
     重建
+- make 无法区分文件形式的工作目标与假想工作目标，如果当前目录中刚刚好出现与假想
+  工作目标同名的文件，make 将回在它的相依图中建立该文件与假想工作目标的关系。
 ### all:
 > 执行编译应用程序的所有工作
 ### clean:
@@ -49,7 +60,7 @@ target:
 > 执行与应用程序相关的任何测试
 ## nonphony target
 only `TAGS`
-### TAGS
+### TAGS (nonphony target)
 > 建立可供编辑器使用的标记表
 
 ## empty target (cookie)

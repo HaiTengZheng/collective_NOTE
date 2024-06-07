@@ -9,3 +9,10 @@
 
 ## remark: /var/log/dmesg
 该文件是日志文件, 与 dmesg 无关
+
+## see human-readable temestamps
+> dmesg -T
+
+## certain logging levels
+such as errors and warnings
+> dmesg -l err,warn

@@ -11,6 +11,7 @@ match c {
     b'a'...b'z' => c - 32,
     _ => c,
 }
+```
 
 # import the crate
 ```rust

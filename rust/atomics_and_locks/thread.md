@@ -1,5 +1,5 @@
 # std::thread::spawn
-spawn a new thread
+> spawn a new thread
 ```rust
 use std::thread;
 
@@ -11,3 +11,5 @@ thread::spawn(move || {
 return a `thread::Result`
 
 # id()
+
+# sleep()

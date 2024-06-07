@@ -1,3 +1,12 @@
+# dependencies
+```toml
+[dependencies]
+# use git repo
+regex = { git = "https://github.com/rust-lang/regex.git" }
+# specify version by `rev`
+regex = { git = "https://github.com/rust-lang/regex.git", rev = "9f9f693" }
+```
+
 # 版本
 > cargo add actix-web@4
 ```toml
@@ -73,7 +82,7 @@ Cargo uses the semver crate for parsing the versions specified.
 - For libraries, it's recommended you do not include this file in your version
   control system. When using Git, you can do this by adding Cargo.lock to 
   .gitignore. Leaving out the lock file allows downstrem packages to update
-  indirect depencies as needed.
+  indirect dependencies as needed.
 - For applications, it's recommended you always include Cargo.lock alongside 
   Cargo.toml. This helps to ensure consistent behaviour in published release,
   should 3rd party libraries change in the future.
@@ -118,3 +127,18 @@ cargo test -> [profile.test]
 # 提供 path 和 version
 image = { path = "vendor/image", version = "0.1" }
 ```
+
+# cargo update
+> cargo update
+update specify crate, e.g.
+> cargo update regex
+
+# cargo test
+unit tests: `src/`
+integration-style tests: `tests/`
+## development dependencies
+```toml
+[dev-dependencies]
+reqwest = "0.11"
+```
+

@@ -1,12 +1,12 @@
-# pattern mathcing
-a runtime future that enables a variety of nice code flow patterns.
-- it enables clean functional programming patterns
+# Pattern Matching
+A runtime future that enables a variety of nice code flow patterns.
+- It enables clean functional programming patterns
 
 # match
 a basic pattern starts with `match` keyword
 
 # guard
-allow your to match conditionally
+allow you to match conditionally
 - all match cases within the same match {} block should apply to the same type
 
 # ?

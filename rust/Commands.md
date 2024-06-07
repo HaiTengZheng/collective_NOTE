@@ -1,0 +1,10 @@
+# rustc
+# cargo
+# rustdoc
+# rustfmt
+# rustup
+# cargo-edit
+# cargo-test
+# cargo-run
+# cargo-check
+# cargo-clean

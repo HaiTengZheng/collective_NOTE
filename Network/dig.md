@@ -1,0 +1,2 @@
+# dig
+query DNS
