@@ -51,3 +51,12 @@ imperative means give order or instructions
 - UpperCarmelCase
 - SCREAMING_SNAKE_CASE
 - ' tick
+
+# inline
+It is when the compiler omits the function call and simply copies the body of
+the function instead of calling it.
+```rust
+#[inline(never)]
+// tells the compiler that we never want this function to be inlined during 
+// optimization
+```

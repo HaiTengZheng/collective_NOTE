@@ -20,12 +20,12 @@ In the Rust standard library, functions returning or expecting a length
 - f         float
 
 ## suffix declaration
-e.g.
-112i32
-32.323f32
+e.g.,
+- 112i32
+- 32.323f32
 
-# some rule
-- Rust 允许使用下划线 "_" 作为虚拟分隔符来对数字进行可读性分隔  e.g. 500_000
+# Readability
+Rust 允许使用下划线 "_" 作为虚拟分隔符来对数字进行可读性分隔  e.g. 500_000
 
 # arithmetic
 In Rust, all arithmetic is checked by default.

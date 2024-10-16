@@ -1,4 +1,4 @@
-# preprocessor
+# Preprocessor
 - Preprocessor directives begin with `#`
 - Only whitespace characters and comments delimited by /* and */ may appear
   before a preprocessor directive on a line.
@@ -85,24 +85,24 @@ TOCKENCONCAT(O, K);
 ```
 
 # `#line`
-cause the subsequent source-code lines to be renumbered with the specified 
+It cause the subsequent source-code lines to be renumbered with the specified 
 constant integer value
 ```c
 #line 100
 #line 100 "file.c"
 ```
 
-# predefined symbolic constants
-- __LINE__
-- __FILE__
-- __DATE__
-- __TIME__
-- __STDC__
+# Predefined symbolic constants
+- `__LINE__`
+- `__FILE__`
+- `__DATE__`
+- `__TIME__`
+- `__STDC__`
 
-# assertions
+# Assertions
 The `assert` macro defined in <assert.h> tests an expression's value at 
 execution time. If the value is false(0), assert prints an error message and 
-terminate the program by calling function `abort` of the general utilies library
+terminate the program by calling function `abort` of the general utilities library
 (<stdlib.h>)
 ```c
 assert(x <= 10);

@@ -1,5 +1,5 @@
 # REST
-> representational state transfer
+representational state transfer
 - GET
 - UPDATE
 - CREATE

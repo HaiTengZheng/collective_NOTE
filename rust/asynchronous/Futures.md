@@ -1,8 +1,10 @@
-# future
+# Future
 A `Future` is a representation of some operation that will be completed in the 
 future. 
 A `Future` is an asynchronous computation can produce a value (the value can 
 be empty, `()`)
+-   Rust's futures are an example of an asynchronous model based on stackless coroutines.
+    (stackful coroutines: `fibers/green threads`)
 
 # Async in Rust uses a poll-based approach
 three phases

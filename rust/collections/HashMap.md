@@ -1,8 +1,26 @@
 # HashMap<K, V>
-> https://rustwiki.org/zh-CN/std/collections/hash_map/struct.HashMap.html
 存储了 K 类型到 V 类型值之间的映射关系
 - 将数据存储在堆上
+```rust
+// HashMap
+pub struct HashMap<K, V, S = RandomState> {
+    hash_builder: S,
+    table: RawTable<K, V>,
+    resize_policy: DefaultResizePolicy,
+}
 
+// RawTable
+pub struct RawTable<K, V> {
+    capacity_mask: usize,
+    size: usize,
+    hashed: TaggedHashUintPtr,
+
+    marker: marker::PhantomData(<K, V>),
+}
+```
+
+
+# apply
 ```rust
 use std::collections::HashMap;
 

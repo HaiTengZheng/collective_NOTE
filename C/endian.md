@@ -1,6 +1,6 @@
-# endian
-- little-endian     the least significant byte is written to memory firt
-- big-endian        the most significant byte is written to memory firt
+# Endian
+- `little-endian`: the least significant byte is written to memory first.
+- `big-endian`: the most significant byte is written to memory first.
 ```c
 int a = 0x1245A78F
 /* little-endian 

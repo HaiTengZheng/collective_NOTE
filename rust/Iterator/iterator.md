@@ -16,9 +16,9 @@ for elm in &arr {
     println!("{}", elm);
 }
 ```
-- .iter()       For an iterator of references
-- .iter_mut()   For an iterator of mutable references
-- .into_iter()  For an iterator of values (not references)
+- `.iter()`       For an iterator of references
+- `.iter_mut()`   For an iterator of mutable references
+- `.into_iter()`  For an iterator of values (not references)
 
 A `for` loop is an iterator of values,
 `for item in iterator` = `for item in iterator.into_iter()`

@@ -1,19 +1,18 @@
 # 库
 > 一组预先编译好的函数的集合，库文件的名字总是以 lib 开头。
-------------------------------------------------------------------------
-remark: 文中 object 仅用来代替具体名称
-------------------------------------------------------------------------
+Remark: 文中 object 仅用来代替具体名称
+
 # 动态库
 动态链接到使用它的二进制文件，库的代码不包含在二进制中
 ## 标准文件名
-> lib + <library name> + .so + <library version information>
+lib + <library name> + .so + <library version information>
 ## 版本信息
-> <M>.<m>.<p>
+<M>.<m>.<p>
 - M: 主版本号
 - m: 次版本号
 - p: 补丁版本号
 ## soname
-> lib + <library name> + .so + <library major version digits>
+lib + <library name> + .so + <library major version digits>
 ## 优点
 - 二进制文件尺寸更小
 - 库可以被更新，而不需要重新编译二进制程序
@@ -21,7 +20,7 @@ remark: 文中 object 仅用来代替具体名称
 不能从系统中移动或删除库
 # 编译
 > gcc -Wall -Wextra -pedantic -std=cc99 object.c -o object -lobject
-------------------------------------------------------------------------
+
 # 创建动态库
 ## 创建目标文件
 使用 -fPIC 选项告诉 GCC 生成位置无关代码(PIC)，允许代码在不同进程的不同
@@ -45,6 +44,7 @@ gcc -shared -Wl,-soname,libobject.so -o libobject.so.1 object.o
 
 .so 文件将符号保存在名为 .dynsym 的特殊表中，strip 命令不会触及该表
 可以使用 readelf --symbols 选项在被清除符号的动态库上查看此表
+
 # 安装动态库
 将库文件与头文件移动到正确的目录
 头文件：/usr/local/include/
@@ -63,7 +63,6 @@ echo "/usr/local/lib" >> /etc/ld.so.conf.d/local.conf
 ```
 ## 创建必要的链接并更新缓存
 > sudo ldconfig
-------------------------------------------------------------------------
 
 
 

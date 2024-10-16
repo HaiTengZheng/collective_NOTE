@@ -1,58 +1,70 @@
 # Family
+The collections of all sizes of a font.
 ## Serif family (default)
-- \textrm{atext}
-- {\rm atext}
+> \textrm{atext}
 ## Sans serif family
-- \textsf{atext}
-- {\sf atext}
+> \textsf{atext}
 ## Typewriter family
-- \texttt{atext}
-- {\tt atext}
+> \texttt{atext}
 
 # Series
+The `Series` is the combination of the weight and width.
+## Weight
+The thickness of the stokes.
+- light
+- medium (or normal)
+- bold
+## Width
+How wide the characters are.
+- narrow (or condensed)
+- medium (or normal)
+- extended
 ## Medium series (default)
-- \textmd{atext}
+> \textmd{atext}
 ## Boldface series
-- \textbf{atext}
-- {\bf atext}
+> \textbf{atext}
+
+# Typewriter
+## Monospaced (typewriter style)
+Fonts all of whose characters are of the same width.
+## Proportional
+Normal text.
 
 # Shape
+- upright (or romain)
+- slanted
+- italic
+- small caps
 ## Upright Shape (default)
-- \textup{atext}
+> \textup{atext}
 ## Italic shape
-- \textit{atext}
-- {\it atext}
+> \textit{atext}
 ## Slanted shape
-- \textsl{atext}
-- {\sl atext}
+> \textsl{atext}
 ## CAPS & SMALL CAPS SHAPE
-- \textsc{atext}
-- {\sc atext}
+> \textsc{atext}
 
 # Size
-## Tiny size
-- {\tiny atext}
-## Script size
-- {\scriptsize atext}
-## Foot note size
-- {\footnotesize atext}
-## Small size
-- {\small atext}
-## Normal size (default)
-## Large size
-- {\large atext}
-## Larger size
-- {\Large atext}
-## Largest size
-- {\LARGE atext}
-## Huge size
-- {\huge atext}
-## Hugest size
-- {\Huge atext}
+- \Tiny
+- \tiny
+- \SMALL
+- \Small
+- \small
+- \normalsize
+- \large
+- \Large
+- \LARGE
+- \huge
+- \Huge
+> `\SMALL` is also called `\scriptsize`
+> `\Small` is also called `\footnotesize`
 
 
-# example
+# Italic correction
 > {\it red\/} line
-the `\/` symbol can be used between two letters for increasing inter-letter
+the `\/` symbol can be used between two letters for increasing inter>letter
 spacing, it's not required if the last italic, emphasized, or slanted letter
 followed by a punctuation.
+
+# two letter commands
+Don't use them any more, they are not **orthogonality**.

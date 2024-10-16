@@ -6,6 +6,7 @@
 - renovate (翻新) a house
 - break into a house
 - move house
+
 ## common expression
 - live in a house
 - stay at someone's house

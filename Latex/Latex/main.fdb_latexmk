@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1712938655.24889 "main.xdv" "main.pdf" "main" 1712938655.65612 0
-  "main.xdv" 1712938655.10246 14176 eeac289b6ea298041a2ff161246e5bca "xelatex"
+["xdvipdfmx"] 1726330264.01269 "main.xdv" "main.pdf" "main" 1726330264.53991 0
+  "main.xdv" 1726330263.87627 14212 0f776160f24e237ac318be7a2bf7ff71 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1712938654.10933 "main.tex" "main.xdv" "main" 1712938655.65286 0
+["xelatex"] 1726330262.64759 "main.tex" "main.xdv" "main" 1726330264.53673 0
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -69,9 +69,9 @@
   "/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex" 1673816307 4385 510565c2f07998c8a0e14f0ec07ff23c ""
   "/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex" 1673816307 29239 22e8c7516012992a49873eff0d868fed ""
   "/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def" 1673816307 6950 8524a062d82b7afdc4a88a57cb377784 ""
-  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1689984000 20144 d5ecf0a5140c8d8d8b72cbe86e320eff ""
-  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1689984000 8448 c33a4e1cb35cee9b33c2b21033b73e39 ""
-  "/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd" 1689984000 2430 8418b3f1835e588625becbcac4dbce56 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1714953600 20144 d5ecf0a5140c8d8d8b72cbe86e320eff ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1714953600 8448 c33a4e1cb35cee9b33c2b21033b73e39 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd" 1714953600 2430 8418b3f1835e588625becbcac4dbce56 ""
   "/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty" 1399239813 4378 f429f0da968c278653359293040a8f52 ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
@@ -97,11 +97,11 @@
   "/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty" 1667332637 7392 f19cdc68ae9f1190dbd54eee6d29fb7c ""
   "/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty" 1253232110 1380 971a51b00a14503ddf754cab24c3f209 ""
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1655066402 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1689984000 40900 887e0dc8cac988a9e9c574af364cf837 ""
-  "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1710246770 10487561 899b865fe48758bde05b6ea1bb3a2ce9 ""
-  "main.aux" 1712938655.10246 529 6ef165861466ccaa7049ccd949b5d187 "xelatex"
-  "main.tex" 1712938654.06247 1238 61802dd48d9846eb06c1ba391ce213cb ""
-  "main.toc" 1712938655.10246 292 1505459aea336da20bf9b15fd42ccadb "xelatex"
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1714953600 40900 887e0dc8cac988a9e9c574af364cf837 ""
+  "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1724332223 11130193 df860a6331ac35d3cfa89516a79f294a ""
+  "main.aux" 1726330263.87527 529 e1604e43b652226868e85f6ba7477cb1 "xelatex"
+  "main.tex" 1712939415.34003 1238 96a3bcf2ca08f434a0d7e6f1dd97ca78 ""
+  "main.toc" 1726330263.87627 292 49817f2f25a71dd436b118eb95d110c7 "xelatex"
   (generated)
   "main.aux"
   "main.log"
